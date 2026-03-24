@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Rodrigo Leite da Silva Oliveira - Técnico de Telecomunicações e Desenvolvedor em Formação">
+  <meta name="author" content="Rodrigo Leite da Silva Oliveira">
+
+  <!-- Título da página que aparece na aba do navegador -->
+  <title>Rodrigo Oliveira | Portfólio</title>
+
+  <!-- Fonte do Google Fonts - Inter é moderna e legível -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Nosso arquivo de estilos -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================ -->
+  <!-- NAVEGAÇÃO PRINCIPAL                          -->
+  <!-- ============================================ -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <!-- Logo / Nome -->
+      <a href="#hero" class="nav__logo">
+        <span class="nav__logo-accent">&lt;</span>RO<span class="nav__logo-accent">/&gt;</span>
+      </a>
+
+      <!-- Menu de navegação (esconde no mobile, aparece com hamburger) -->
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#sobre" class="nav__link">Sobre</a>
+          </li>
+          <li class="nav__item">
+            <a href="#habilidades" class="nav__link">Habilidades</a>
+          </li>
+          <li class="nav__item">
+            <a href="#experiencia" class="nav__link">Experiência</a>
+          </li>
+          <li class="nav__item">
+            <a href="#educacao" class="nav__link">Educação</a>
+          </li>
+          <li class="nav__item">
+            <a href="#projetos" class="nav__link">Projetos</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contato" class="nav__link nav__link--cta">Contato</a>
+          </li>
+        </ul>
+
+        <!-- Botão de fechar o menu (visível apenas no mobile) -->
+        <button class="nav__close" id="nav-close" aria-label="Fechar menu">
+          &times;
+        </button>
+      </div>
+
+      <!-- Botão hamburger para mobile -->
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menu">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO HERO - Primeira coisa que o visitante vê -->
+  <!-- ============================================ -->
+  <section class="hero" id="hero">
+    <!-- Fundo com grid animado (feito via CSS) -->
+    <div class="hero__grid-bg"></div>
+
+    <!-- Partículas decorativas flutuantes -->
+    <div class="hero__particles">
+      <span class="particle particle--1"></span>
+      <span class="particle particle--2"></span>
+      <span class="particle particle--3"></span>
+      <span class="particle particle--4"></span>
+      <span class="particle particle--5"></span>
+      <span class="particle particle--6"></span>
+    </div>
+
+    <div class="hero__content container">
+      <!-- Saudação pequena -->
+      <p class="hero__greeting reveal">Olá, eu sou</p>
+
+      <!-- Nome principal -->
+      <h1 class="hero__name reveal">
+        Rodrigo <span class="hero__name-accent">Oliveira</span>
+      </h1>
+
+      <!-- Animação de digitação para o cargo -->
+      <div class="hero__typing reveal">
+        <span class="hero__typing-text" id="typing-text"></span>
+        <span class="hero__typing-cursor">|</span>
+      </div>
+
+      <!-- Breve descrição -->
+      <p class="hero__description reveal">
+        14+ anos em Telecomunicações na Vivo Telefônica.<br>
+        Construindo o futuro com código e fibra óptica.
+      </p>
+
+      <!-- Botões de ação -->
+      <div class="hero__actions reveal">
+        <a href="#contato" class="btn btn--primary">
+          Fale Comigo
+        </a>
+        <a href="#projetos" class="btn btn--outline">
+          Ver Projetos
+        </a>
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="hero__scroll-indicator">
+        <div class="hero__scroll-mouse">
+          <div class="hero__scroll-wheel"></div>
+        </div>
+        <span>Role para baixo</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO SOBRE MIM                              -->
+  <!-- ============================================ -->
+  <section class="section" id="sobre">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="section__title-number">01.</span> Sobre Mim
+      </h2>
+
+      <div class="about">
+        <div class="about__content reveal">
+          <p class="about__text">
+            Sou <strong>Rodrigo Leite da Silva Oliveira</strong>, profissional com mais de
+            <strong>14 anos de experiência</strong> em telecomunicações na
+            <strong>Vivo Telefônica</strong>, atuando como Técnico Reparador de Linha de Assinante.
+          </p>
+          <p class="about__text">
+            Faço parte da <strong>Equipe V</strong> (equipe VIP), responsável pelo atendimento
+            técnico a clientes de alto perfil, incluindo ex-presidentes, deputados e celebridades.
+            Essa experiência me ensinou a trabalhar sob pressão, com excelência e total discrição.
+          </p>
+          <p class="about__text">
+            Atualmente, estou em transição para a área de <strong>Desenvolvimento de Software</strong>,
+            cursando <strong>Análise e Desenvolvimento de Sistemas</strong> na Estácio.
+            Minha base sólida em redes e infraestrutura me dá uma visão única sobre como
+            sistemas se comunicam de ponta a ponta.
+          </p>
+        </div>
+
+        <!-- Card com informações rápidas -->
+        <div class="about__info-card reveal">
+          <div class="about__info-item">
+            <span class="about__info-number">14+</span>
+            <span class="about__info-label">Anos de Experiência</span>
+          </div>
+          <div class="about__info-item">
+            <span class="about__info-number">VIP</span>
+            <span class="about__info-label">Equipe V - Alto Perfil</span>
+          </div>
+          <div class="about__info-item">
+            <span class="about__info-number">2</span>
+            <span class="about__info-label">Formações Acadêmicas</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO HABILIDADES                            -->
+  <!-- ============================================ -->
+  <section class="section section--alt" id="habilidades">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="section__title-number">02.</span> Habilidades
+      </h2>
+
+      <div class="skills">
+        <!-- Habilidades de Desenvolvimento -->
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">
+            <span class="skills__group-icon">&lt;/&gt;</span>
+            Desenvolvimento
+          </h3>
+
+          <div class="skills__cards">
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">HTML5</span>
+                <span class="skill-card__level">75%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="75"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">CSS3</span>
+                <span class="skill-card__level">70%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="70"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">JavaScript</span>
+                <span class="skill-card__level">60%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="60"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Java</span>
+                <span class="skill-card__level">55%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="55"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">SQL</span>
+                <span class="skill-card__level">50%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="50"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Git / GitHub</span>
+                <span class="skill-card__level">65%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="65"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Habilidades de Telecomunicações -->
+        <div class="skills__group reveal">
+          <h3 class="skills__group-title">
+            <span class="skills__group-icon">&#9881;</span>
+            Telecomunicações
+          </h3>
+
+          <div class="skills__cards">
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">FTTH / GPON</span>
+                <span class="skill-card__level">95%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Fibra Óptica</span>
+                <span class="skill-card__level">95%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="95"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">TCP/IP</span>
+                <span class="skill-card__level">85%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="85"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Redes e Infraestrutura</span>
+                <span class="skill-card__level">90%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="90"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Diagnóstico de Falhas</span>
+                <span class="skill-card__level">92%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="92"></div>
+              </div>
+            </div>
+
+            <div class="skill-card">
+              <div class="skill-card__header">
+                <span class="skill-card__name">Atendimento VIP</span>
+                <span class="skill-card__level">98%</span>
+              </div>
+              <div class="skill-card__bar">
+                <div class="skill-card__progress" data-width="98"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO EXPERIÊNCIA - TIMELINE                 -->
+  <!-- ============================================ -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="section__title-number">03.</span> Experiência
+      </h2>
+
+      <div class="timeline">
+        <!-- Item 1 - Equipe VIP (destaque) -->
+        <div class="timeline__item timeline__item--highlight reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <span class="timeline__badge">Destaque</span>
+            <h3 class="timeline__title">Equipe V - Atendimento VIP</h3>
+            <span class="timeline__company">Vivo Telefônica</span>
+            <span class="timeline__period">Período Atual</span>
+            <p class="timeline__description">
+              Membro selecionado da <strong>Equipe V</strong>, responsável pelo atendimento
+              técnico exclusivo a clientes de alto perfil: ex-presidentes da República,
+              deputados federais, celebridades e personalidades. Trabalho que exige
+              máxima excelência técnica, sigilo absoluto e resolução imediata.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">VIP</span>
+              <span class="tag">FTTH</span>
+              <span class="tag">Alta Prioridade</span>
+              <span class="tag">Sigilo</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2 - Técnico Reparador -->
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Técnico Reparador LA</h3>
+            <span class="timeline__company">Vivo Telefônica</span>
+            <span class="timeline__period">2010 - Presente (14+ anos)</span>
+            <p class="timeline__description">
+              Reparo e manutenção de linhas de assinantes. Atuação em redes de fibra óptica
+              (FTTH/GPON), diagnóstico avançado de falhas, fusão de fibras, configuração
+              de equipamentos e garantia de qualidade do sinal. Experiência abrangente em
+              toda a infraestrutura de telecomunicações residencial e empresarial.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">Fibra Óptica</span>
+              <span class="tag">GPON</span>
+              <span class="tag">TCP/IP</span>
+              <span class="tag">Diagnóstico</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3 - Transição para Dev -->
+        <div class="timeline__item reveal">
+          <div class="timeline__marker"></div>
+          <div class="timeline__content">
+            <h3 class="timeline__title">Desenvolvedor em Formação</h3>
+            <span class="timeline__company">Projetos Pessoais & Estácio</span>
+            <span class="timeline__period">2024 - Presente</span>
+            <p class="timeline__description">
+              Transição de carreira para desenvolvimento de software. Construção de projetos
+              práticos utilizando Java, HTML, CSS e JavaScript. Aplicando a disciplina e a
+              mentalidade de resolução de problemas adquirida em 14 anos de telecomunicações
+              no mundo do código.
+            </p>
+            <div class="timeline__tags">
+              <span class="tag">Java</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">JavaScript</span>
+              <span class="tag">Git</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO EDUCAÇÃO                               -->
+  <!-- ============================================ -->
+  <section class="section section--alt" id="educacao">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="section__title-number">04.</span> Educação
+      </h2>
+
+      <div class="education">
+        <!-- Card 1 - ADS -->
+        <div class="education__card reveal">
+          <div class="education__icon">
+            <span>&#127891;</span>
+          </div>
+          <div class="education__info">
+            <h3 class="education__course">Análise e Desenvolvimento de Sistemas</h3>
+            <span class="education__institution">Estácio de Sá</span>
+            <span class="education__status education__status--current">Em andamento</span>
+            <p class="education__description">
+              Formação tecnóloga focada em desenvolvimento de software, banco de dados,
+              engenharia de software e arquitetura de sistemas.
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 - Gestão Pública -->
+        <div class="education__card reveal">
+          <div class="education__icon">
+            <span>&#127891;</span>
+          </div>
+          <div class="education__info">
+            <h3 class="education__course">Gestão Pública</h3>
+            <span class="education__institution">Concluído</span>
+            <span class="education__status education__status--done">Concluído</span>
+            <p class="education__description">
+              Graduação em Gestão Pública, proporcionando visão ampla sobre administração,
+              processos organizacionais e gestão de recursos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO PROJETOS                               -->
+  <!-- ============================================ -->
+  <section class="section" id="projetos">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="section__title-number">05.</span> Projetos
+      </h2>
+
+      <div class="projects">
+        <!-- Projeto 1 - Este portfólio -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__folder">&#128193;</span>
+            <div class="project-card__links">
+              <a href="https://github.com/RodrigolsilvaO/portfolio-rodrigo-oliveira"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Ver código no GitHub"
+                 class="project-card__link">
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Portfólio Pessoal</h3>
+          <p class="project-card__description">
+            Este portfólio! Site responsivo com dark mode, animações CSS e design moderno.
+            Construído do zero com HTML, CSS e JavaScript vanilla.
+          </p>
+          <div class="project-card__tags">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+          </div>
+        </article>
+
+        <!-- Projeto 2 - Placeholder para futuros projetos -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__folder">&#128193;</span>
+            <div class="project-card__links">
+              <a href="https://github.com/RodrigolsilvaO"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Ver código no GitHub"
+                 class="project-card__link">
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Calculadora de Atenuação</h3>
+          <p class="project-card__description">
+            Ferramenta para calcular a atenuação de sinal em redes de fibra óptica.
+            Unindo conhecimento de telecom com programação.
+          </p>
+          <div class="project-card__tags">
+            <span>Java</span>
+            <span>Telecom</span>
+            <span>FTTH</span>
+          </div>
+        </article>
+
+        <!-- Projeto 3 -->
+        <article class="project-card reveal">
+          <div class="project-card__header">
+            <span class="project-card__folder">&#128193;</span>
+            <div class="project-card__links">
+              <a href="https://github.com/RodrigolsilvaO"
+                 target="_blank"
+                 rel="noopener noreferrer"
+                 aria-label="Ver código no GitHub"
+                 class="project-card__link">
+                GitHub
+              </a>
+            </div>
+          </div>
+          <h3 class="project-card__title">Sistema de Ordens de Serviço</h3>
+          <p class="project-card__description">
+            Aplicação para gerenciar ordens de serviço técnico. CRUD completo com
+            banco de dados SQL e interface web.
+          </p>
+          <div class="project-card__tags">
+            <span>Java</span>
+            <span>SQL</span>
+            <span>HTML/CSS</span>
+          </div>
+        </article>
+      </div>
+
+      <!-- Link para ver mais no GitHub -->
+      <div class="projects__more reveal">
+        <a href="https://github.com/RodrigolsilvaO"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="btn btn--outline">
+          Ver mais no GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- SEÇÃO CONTATO                                -->
+  <!-- ============================================ -->
+  <section class="section section--alt" id="contato">
+    <div class="container">
+      <h2 class="section__title reveal">
+        <span class="section__title-number">06.</span> Contato
+      </h2>
+
+      <div class="contact">
+        <div class="contact__text reveal">
+          <h3 class="contact__heading">Vamos conversar?</h3>
+          <p class="contact__description">
+            Estou aberto a oportunidades na área de desenvolvimento de software
+            e também disponível para projetos freelance. Se tiver uma pergunta ou
+            só quiser trocar uma ideia, fique à vontade!
+          </p>
+        </div>
+
+        <div class="contact__cards reveal">
+          <!-- Email -->
+          <a href="mailto:rodrigothamara92@gmail.com" class="contact-card">
+            <span class="contact-card__icon">&#9993;</span>
+            <span class="contact-card__label">E-mail</span>
+            <span class="contact-card__value">rodrigothamara92@gmail.com</span>
+          </a>
+
+          <!-- Telefone / WhatsApp -->
+          <a href="https://wa.me/5561999366340" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-card__icon">&#128241;</span>
+            <span class="contact-card__label">WhatsApp</span>
+            <span class="contact-card__value">(61) 99936-6340</span>
+          </a>
+
+          <!-- Localização -->
+          <div class="contact-card">
+            <span class="contact-card__icon">&#128205;</span>
+            <span class="contact-card__label">Localização</span>
+            <span class="contact-card__value">Brasília - DF</span>
+          </div>
+
+          <!-- GitHub -->
+          <a href="https://github.com/RodrigolsilvaO" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-card__icon">&#128187;</span>
+            <span class="contact-card__label">GitHub</span>
+            <span class="contact-card__value">github.com/RodrigolsilvaO</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- FOOTER                                       -->
+  <!-- ============================================ -->
+  <footer class="footer">
+    <div class="container">
+      <!-- Links sociais -->
+      <div class="footer__social">
+        <a href="https://github.com/RodrigolsilvaO"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="footer__social-link"
+           aria-label="GitHub">
+          GitHub
+        </a>
+        <a href="mailto:rodrigothamara92@gmail.com"
+           class="footer__social-link"
+           aria-label="E-mail">
+          E-mail
+        </a>
+        <a href="https://wa.me/5561999366340"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="footer__social-link"
+           aria-label="WhatsApp">
+          WhatsApp
+        </a>
+      </div>
+
+      <!-- Créditos -->
+      <p class="footer__credit">
+        Projetado e construído por
+        <span class="footer__credit-name">Rodrigo Oliveira</span>
+      </p>
+      <p class="footer__copyright">
+        &copy; 2026 | Todos os direitos reservados
+      </p>
+    </div>
+  </footer>
+
+  <!-- ============================================ -->
+  <!-- BOTÃO VOLTAR AO TOPO                         -->
+  <!-- ============================================ -->
+  <button class="scroll-top" id="scroll-top" aria-label="Voltar ao topo">
+    &#8593;
+  </button>
+
+  <!-- Nosso arquivo JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
