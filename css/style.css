@@ -593,6 +593,29 @@ button {
   gap: var(--espacamento-2xl);
 }
 
+
+/* Foto de perfil */
+.about__photo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--espacamento-xl);
+}
+
+.about__photo-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid var(--cor-accent);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+  transition: all var(--transicao-media);
+}
+
+.about__photo-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.4);
+}
+
 .about__text {
   font-size: var(--texto-base);
   color: var(--cor-texto-secundario);
