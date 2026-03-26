@@ -92,11 +92,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Lista de textos que serão "digitados"
   const textosParaDigitar = [
-    'Técnico de Telecomunicações',
-    'Desenvolvedor em Formação',
-    'Equipe V - Atendimento VIP',
-    'Estudante de ADS - Estácio',
-    'Especialista em Fibra Óptica'
+    'Desenvolvedor de Software',
+    'C# / .NET / SQL Server',
+    'Node.js / JavaScript',
+    'HTML / CSS / JS',
+    'Formado em ADS - Estácio'
   ];
 
   const elementoDigitacao = document.getElementById('typing-text');
