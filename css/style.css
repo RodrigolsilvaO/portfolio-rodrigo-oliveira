@@ -606,14 +606,14 @@ button {
   height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid rgba(0, 212, 255, 0.3);
-  box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+  border: none;
+  box-shadow: none;
   transition: all var(--transicao-media);
 }
 
 .about__photo-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
 }
 
 .about__text {
