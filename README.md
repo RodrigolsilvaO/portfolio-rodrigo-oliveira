@@ -1,65 +1,81 @@
-# 👋 Portfólio — Rodrigo Oliveira
+# Portfólio — Rodrigo Oliveira
 
-**Desenvolvedor .NET / C# Júnior | Brasília - DF**
+Site pessoal profissional com apresentação, stack técnica, timeline de experiência e projetos.
 
-### 🌐 Acesse o site ao vivo
-
-# [rodrigolsilvao.github.io/portfolio-rodrigo-oliveira](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/)
-
-Site pessoal com apresentação profissional, stack técnica, timeline de experiência, projetos e formas de contato.
+![Demo](https://img.shields.io/badge/demo-online-brightgreen)
+![Stack](https://img.shields.io/badge/stack-HTML%20·%20CSS%20·%20JavaScript-512BD4)
+![License](https://img.shields.io/badge/license-MIT-blue)
 
 ---
 
-## 🔗 Ir direto pras seções
+## 🌐 Demonstração
 
-- 🏠 [**Home**](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/)
-- 👤 [**Sobre mim**](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#sobre)
-- 🛠 [**Habilidades**](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#habilidades)
-- 💼 [**Experiência**](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#experiencia)
-- 🎓 [**Educação**](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#educacao)
-- 🚀 [**Projetos**](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#projetos)
-- 📫 [**Contato**](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#contato)
+**Acesso direto:** [rodrigolsilvao.github.io/portfolio-rodrigo-oliveira](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/)
 
----
+**Navegação por seção:**
 
-## 📫 Fale comigo
-
-- 📧 **E-mail:** rodrigol.silvadev@gmail.com
-- 💼 **LinkedIn:** [linkedin.com/in/rodrigoleitedev](https://linkedin.com/in/rodrigoleitedev)
-- 💻 **GitHub:** [github.com/RodrigolsilvaO](https://github.com/RodrigolsilvaO)
-- 📱 **WhatsApp:** [(61) 99927-3152](https://wa.me/5561999273152)
-- 📍 **Localização:** Brasília - DF, Brasil
+- [Apresentação](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#sobre)
+- [Habilidades](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#habilidades)
+- [Experiência](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#experiencia)
+- [Formação](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#educacao)
+- [Projetos](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#projetos)
+- [Contato](https://rodrigolsilvao.github.io/portfolio-rodrigo-oliveira/#contato)
 
 ---
 
-## 🧑‍💻 Sobre este repositório (para devs)
+## 📖 Sobre o projeto
 
-Site single-page construído do zero com **HTML5, CSS3 e JavaScript vanilla** — sem frameworks ou dependências externas.
+Portfólio single-page desenvolvido sem frameworks, apenas com HTML5, CSS3 e JavaScript.
+O objetivo foi construir uma apresentação profissional leve, responsiva e de fácil manutenção, com foco em:
 
-### Funcionalidades
-- Dark mode como padrão
-- Design responsivo (mobile-first)
-- Efeito de digitação no hero
-- Animações de revelação ao rolar (IntersectionObserver)
-- Timeline de experiência profissional
-- Suporte a `prefers-reduced-motion` (acessibilidade)
+- **Performance** — sem dependências externas pesadas
+- **Acessibilidade** — suporte a `prefers-reduced-motion` e navegação por teclado
+- **Responsividade** — adaptado a dispositivos móveis, tablets e desktops
+- **Identidade visual** — tema escuro como padrão, tipografia Inter
 
-### Estrutura
+---
+
+## 🛠 Tecnologias
+
+- **HTML5** — marcação semântica
+- **CSS3** — variáveis, grid, flexbox, animações
+- **JavaScript (vanilla)** — interações, menu responsivo, efeito de digitação, IntersectionObserver para animações de scroll
+- **Google Fonts** — Inter (texto) e JetBrains Mono (código)
+
+---
+
+## 📁 Estrutura
+
 ```
 portfolio-rodrigo-oliveira/
-├── index.html      # página principal
-├── css/style.css   # estilos
-├── js/main.js      # interações e animações
+├── index.html
+├── css/
+│   └── style.css
+├── js/
+│   └── main.js
+├── img/
 └── README.md
 ```
 
-### Rodar localmente
+---
+
+## 🚀 Executando localmente
+
 ```bash
 git clone https://github.com/RodrigolsilvaO/portfolio-rodrigo-oliveira.git
 cd portfolio-rodrigo-oliveira
-# abra index.html no navegador (não precisa servidor local)
 ```
+
+Abra `index.html` no navegador. Não é necessário servidor local.
 
 ---
 
-Feito com ❤️ por **Rodrigo Oliveira**
+## 📫 Contato
+
+- **E-mail:** rodrigol.silvadev@gmail.com
+- **LinkedIn:** [linkedin.com/in/rodrigoleitedev](https://linkedin.com/in/rodrigoleitedev)
+- **WhatsApp:** [(61) 99927-3152](https://wa.me/5561999273152)
+
+---
+
+Desenvolvido por **Rodrigo Oliveira** · Brasília - DF · 2026
