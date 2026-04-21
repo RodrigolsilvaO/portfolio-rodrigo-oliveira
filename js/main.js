@@ -92,10 +92,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Lista de textos que serão "digitados"
   const textosParaDigitar = [
-    'Desenvolvedor de Software',
-    'C# / .NET / SQL Server',
-    'Node.js / JavaScript',
-    'HTML / CSS / JS',
+    'Desenvolvedor .NET / C# Júnior',
+    'C# / .NET / ASP.NET',
+    'SQL Server / T-SQL / Stored Procedures',
+    'JavaScript / jQuery / Git',
     'Formado em ADS - Estácio'
   ];
 
